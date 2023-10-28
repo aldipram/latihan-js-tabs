@@ -11,7 +11,7 @@ btns.forEach(btn => {
         
         articles.forEach(content => {
             content.classList.remove('active');
-            if (content.getAttribute('id') === btn.getAttribute('data-id')) {
+            if (btn.getAttribute('data-id') === content.getAttribute('id')) {
                 content.classList.add('active');
             };
         });
